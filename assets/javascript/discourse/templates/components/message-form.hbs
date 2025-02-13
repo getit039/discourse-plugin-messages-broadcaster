@@ -1,0 +1,25 @@
+<div class="message-form">
+  <h2>Send a Private Message</h2>
+
+  <label for="sender">Sender:</label>
+  <Input @value={{this.sender}} id="sender" placeholder="Enter sender username" />
+
+  <label for="receiver">Receiver:</label>
+  <Input @value={{this.receiver}} id="receiver" placeholder="Enter receiver username" />
+
+  <label for="subject">Subject:</label>
+  <Input @value={{this.subject}} id="subject" placeholder="Enter message subject" />
+
+  <label for="body">Body:</label>
+  <Textarea @value={{this.body}} id="body" placeholder="Enter your message..." />
+
+  <button {{on "click" this.sendMessage}}>Send Message</button>
+
+  {{#if this.successMessage}}
+    <p class="success-message">{{this.successMessage}}</p>
+  {{/if}}
+
+  {{#if this.errorMessage}}
+    <p class="error-message">{{this.errorMessage}}</p>
+  {{/if}}
+</div>

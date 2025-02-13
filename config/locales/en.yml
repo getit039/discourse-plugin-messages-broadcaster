@@ -1,0 +1,10 @@
+en:
+  messages_broadcaster:
+    form_title: "Send a Private Message"
+    sender_label: "Sender"
+    receiver_label: "Receiver"
+    subject_label: "Subject"
+    body_label: "Message"
+    send_button: "Send Message"
+    success_message: "Message sent successfully!"
+    error_message: "Error sending message. Please try again."
